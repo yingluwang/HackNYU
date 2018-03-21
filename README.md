@@ -18,8 +18,11 @@ export PATH=${PATH}:/usr/local/mysql/bin
 1. Create a directory 'mysql-files' and grant ownership of the directory to the User and Group: _mysql
 (User is required only for ownership purposes, not login purposes)
 
-2. Create a specific *mysql* user to own the MySQL directory and data
+2. Start mysqld from the system root account using log in account: sudo bin/mysqld --initialize-insecure --user=_mysql
+
+(Superuser account: 'root'@'localhost')
 
 # Start the Server
+1. Start the server: bin/mysqld_safe --user=_mysql &
 
 # Test the Server
