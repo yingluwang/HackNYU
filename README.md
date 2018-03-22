@@ -1,5 +1,11 @@
 # HackNYU
 
+# Install MySQL Workbench
+1. Download https://dev.mysql.com/downloads/file/?id=474219
+
+2. Create a new Connection if necessary;
+
+3. 
 # Install MySQL Using Native Packages
 1. Download https://dev.mysql.com/downloads/mysql/
 
