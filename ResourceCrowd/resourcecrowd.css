@@ -42,10 +42,6 @@ div.header .title{
   color: white;
 } */
 
-.filter{
-
-}
-
 #pic{
   position: relative;
   margin: 100px auto 50px auto;
@@ -116,8 +112,19 @@ div.header .title{
 
 .filter{
   position: relative;
-  left: 40%;
-  top: 10%;
+  left: 35%;
+  margin-top: 10%;
+}
+
+.searchbar{
+  width: 250px;
+  margin-left: 10px;
+}
+
+.result{
+  font-family: Kanit;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 div.text td{
@@ -159,6 +166,13 @@ a:visited{
   top: 20px;
   position: relative;
   top: 320px;
+}
+
+.back2{
+  color: white;
+  /* top: 20px; */
+  position: relative;
+  /* bottom: 20px; */
 }
 
 .back a{
