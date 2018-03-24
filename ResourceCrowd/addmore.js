@@ -1,5 +1,9 @@
 $(document).ready(function(){
-  $("#addSection").click(function(){
+  
+
+var resource_itter = 1;
+
+$("#addSection").click(function(){
     $("table").append("\
     <tr class='add'>\
       <td class='subject'>Subject</td>\
@@ -8,13 +12,18 @@ $(document).ready(function(){
       <br><br>\
       <td class='level'>Resource Level</td>\
       <td id='level'>\
-        <input type='checkbox' name='level[]' id='entry' value='entry'>Entry Level<br>\
-        <input type='checkbox' name='level[]' id='mid' value='mid'>Intermediate Level<br>\
-        <input type='checkbox' name='level[]' id='adv' value='adv'>Advanced Level\
+        <input type='checkbox' name=level[" + resource_itter + "][]' id='entry' value='entry'>Entry Level<br>\
+        <input type='checkbox'  name=level[" + resource_itter + "][]' id='mid' value='mid'>Intermediate Level<br>\
+        <input type= 'checkbox' name=level[" + resource_itter + "][]' id='adv' value='adv'>Advanced Level\
       </td>\
     </tr>\
     ")
-  })
+resource_itter +=1; 
+}
+
+
+
+)
   $("#delSection").click(function(){
     if($(".add")[0]){
       $("table").children().last().remove()

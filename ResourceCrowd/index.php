@@ -25,10 +25,10 @@
 
 //Write data into Database
 //user: root pw: yw123890
-  $host = '127.0.0.1';
+  $host = '123.206.81.75';
   $DBname = 'Info';
   $DBuser = 'root';
-  $DBpswd = 'yw123890';
+  $DBpswd = '!@#456&*(Aa';
 
   $connect =mysqli_connect($host,$DBuser,$DBpswd,$DBname);
 
@@ -61,18 +61,33 @@
 
   mysqli_free_result($cursor);
 
-  foreach($subjects as $subject)
+    
+  $sub_itter = 0;
+  $levels=$_POST['level'];
+
+
+foreach($subjects as $subject)
   {
-    $insert = "INSERT INTO stud_info_subject (id_sub, Subject, Resources_Level, sign_up_id) VALUES(0,'$subject','$level',$parent_order_id)";
+
+  if(is_array($levels[$sub_itter])) {
+      $level=implode(',',$levels[$sub_itter]); 
+
+}
+else {
+$level = $levels[$sub_itter][0];
+}
+
+
+
+    $insert = "INSERT INTO stud_info_subject (id_sub, Subject, Resource_Level, sign_up_id) VALUES(0,'$subject','$level','$parent_order_id')";
     $result = mysqli_query($connect,$insert);
 
-    $levels=$_POST['level'];
+$sub_itter = $sub_itter + 1;
+    
+} 
 
-    if(is_array($levels))
-      $level=implode(',',$levels);
-  }
 
-  mysqli_close($connect);
+ mysqli_close($connect);
 
 ?>
 
