@@ -1,0 +1,109 @@
+.homePage{
+  background: url(page_picture/bg.jpg) no-repeat;
+}
+
+.answerPage{
+  background: url(page_picture/bgAns.jpg) no-repeat;
+}
+
+.layer{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+div.header {
+  background-color: rgba(256,256,256,0.7);
+  height: 120px;
+  margin-top: 0;
+}
+
+div.header .title{
+  text-align: center;
+  margin-top: auto;
+  padding-top:10px;
+  font-family: Rammetto One;
+  font-size: 32px;
+}
+
+/* hr{
+  position: absolute;
+  width:40%;
+  border: 10px solid;
+  color: white;
+} */
+
+#pic{
+  position: relative;
+  margin: 100px auto 50px auto;
+}
+
+#askPic img, #answerPic img {
+  width: 300px;
+  border-radius: 30%;
+}
+
+.fname,.lname,.univ{
+  font-weight: bold;
+  color: white;
+  text-align: right;
+}
+
+.level{
+  font-weight: bold;
+  width:50%;
+  color: white;
+  text-align: center;
+}
+
+.subject{
+  font-weight: bold;
+  width:50%;
+  color: white;
+}
+
+#fname,#lname,#univ,#subject{
+  padding: 5px;
+  border: 20px;
+  border-color: black;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 15px;
+  font-family: "Helvetica Neue";
+  font-size: 12pt;
+  font-weight: bold;
+  color: darkslategrey;
+}
+
+#level{
+  margin-top: 50px;
+  color: white;
+  width: 100%;
+}
+
+div.text td{
+    color:darkslategrey;
+}
+
+.text{
+  font-size: 24px;
+  font-family: Kanit;
+  color: white;
+}
+
+a:visited{
+  color:white;
+}
+
+.button{
+  font-family: Kanit;
+  text-align:center;
+  height: 200px;
+}
+
+footer{
+  color: white;
+  position: absolute !important;
+  bottom: 10px;
+}
