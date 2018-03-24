@@ -6,6 +6,14 @@
   background: url(bgAns.jpg) no-repeat;
 }
 
+.thankyouPage{
+  background: url(bgthankyou.jpg)
+}
+
+.filterPage{
+  background: url(bgthankyou.jpg);
+}
+
 .layer{
   position: absolute;
   height: 100%;
@@ -13,7 +21,7 @@
   background-color: rgba(0,0,0,0.3);
 }
 
-div.header {
+div.header{
   background-color: rgba(256,256,256,0.7);
   height: 120px;
   margin-top: 0;
@@ -34,6 +42,10 @@ div.header .title{
   color: white;
 } */
 
+.filter{
+
+}
+
 #pic{
   position: relative;
   margin: 100px auto 50px auto;
@@ -44,7 +56,7 @@ div.header .title{
   border-radius: 30%;
 }
 
-.fname,.lname,.univ{
+.fname,.lname,.univ,.email{
   font-weight: bold;
   color: white;
   text-align: right;
@@ -52,18 +64,18 @@ div.header .title{
 
 .level{
   font-weight: bold;
-  width:50%;
   color: white;
   text-align: center;
 }
 
 .subject{
   font-weight: bold;
-  width:50%;
   color: white;
+  text-align: center;
 }
 
-#fname,#lname,#univ,#subject{
+
+#fname,#lname,#univ,#subject,#email{
   padding: 5px;
   border: 20px;
   border-color: black;
@@ -76,14 +88,40 @@ div.header .title{
   color: darkslategrey;
 }
 
+#subject{
+  float: left;
+  width: 50%;
+}
+
 #level{
   margin-top: 50px;
   color: white;
-  width: 100%;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+#filter{
+  padding: 5px;
+  border: 20px;
+  border-color: black;
+  border-radius: 10px;
+  background-color: white;
+  margin: 10px;
+  font-family: "Helvetica Neue";
+  font-size: 12pt;
+  font-weight: bold;
+  color: darkslategrey;
+  width: 300px;
+}
+
+.filter{
+  position: relative;
+  left: 40%;
+  top: 10%;
 }
 
 div.text td{
-    color:darkslategrey;
+  color:darkslategrey;
 }
 
 .text{
@@ -96,10 +134,36 @@ a:visited{
   color:white;
 }
 
-.button{
+.more,.button{
+  margin: 30px;
+  text-align:center;
+}
+
+.submit,.clear{
   font-family: Kanit;
   text-align:center;
-  height: 200px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.thankyou{
+  font-size: 36px;
+  font-family: Lobster;
+  position: relative;
+  top: 300px;
+}
+
+.back{
+  color: white;
+  top: 20px;
+  position: relative;
+  top: 320px;
+}
+
+.back a{
+  font-style: italic;
+  color:blue;
 }
 
 footer{
