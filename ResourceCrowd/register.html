@@ -1,0 +1,77 @@
+<html>
+<head>
+  <title>I can provide help!</title>
+<!--CSS-->
+  <link rel="stylesheet" type="text/css" href="resourcecrowd.css">
+<!--Icon-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+<!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="addmore.js"></script>
+<!--Google Font-->
+  <link href='http://fonts.googleapis.com/css?family=Kanit|Rammetto+One' rel='stylesheet'>
+<!--Bootstrap4-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="answerPage">
+  <div class="header">
+    <div class="title">Tell other students in which field you can provide recommendation!</div>
+  </div>
+
+  <!-- <hr> -->
+
+  <form method="POST" name="answerPage" action="index.php">
+    <table class="row">
+      <tr>
+        <td class="col-1 fname">First Name</td>
+        <td class="col-11"><input required type="text" name="fname" id="fname" size="20"></td>
+      </tr>
+
+      <tr>
+        <td class="col-4 lname">Last Name</td>
+        <td class="col-8"><input required type="text" name="lname" id="lname" size="20"></td>
+      </tr>
+
+      <tr>
+        <td class="col-7 univ">University</td>
+        <td class="col-5"><input required type="text" name="univ" id="univ" size="20"></td>
+      </tr>
+
+      <tr>
+        <td class="col-4 level">Resource Level</td>
+        <td class="col-4" id="level">
+          <input type="checkbox" name="level" id="entry" value="entry">Entry Level&nbsp;&nbsp;
+          <input type="checkbox" name="level" id="mid" value="mid">Intermediate Level&nbsp;&nbsp;
+          <input type="checkbox" name="level" id="adv" value="adv">Advanced Level
+        </td>
+
+        <td class="col-4 subject">Subject</td>
+        <td class="col-4"><input required type="text" name="subject" id="subject" size="20"></td>
+      </tr>
+
+    </table>
+
+    <tr class="button">
+      <td><input type=submit value='Next'></td>
+      <td><input type=Reset value='Clear All'></td>
+    </tr>
+
+  </form>
+
+  <button class="text-center" id="addSection">
+    <i class="fas fa-plus"></i>
+  </button>
+
+  <button class="text-center" id="delSection">
+    <i class="fas fa-minus"></i>
+  </button>
+
+  <footer class="col-12 text-center">Copyright &copy; Resource Crowd</footer>
+
+</body>
+</html>
